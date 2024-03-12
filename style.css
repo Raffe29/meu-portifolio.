@@ -1,0 +1,438 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  width: 120%;
+  height: 100%;
+  transform: translateY(10%);
+  overflow: hidden;
+  background: radial-gradient(circle, #16191e, #000000);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+.content {
+  height: 300px; /* Defina a altura desejada */
+  overflow-y: auto; /* Adiciona a barra de rolagem vertical apenas quando necessário */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a122e;
+}
+p {
+  color: #646464;
+}
+h1 {
+  font-size: 15px;
+}
+
+.texto {
+  color: rgb(255, 255, 255);
+  margin-left: 25%;
+  margin-top: 10%;
+  font-size: 2em;
+  width: 600px;
+}
+.texto1 {
+  margin-left: 10%;
+  margin-right: 600;
+  margin-top: 10%;
+  font-size: 0.4em;
+}
+.portal1 {
+  margin-left: 60px;
+  background-color: #00000000;
+  font-size: 15px;
+  color: #0084ff91;
+  text-decoration: none;
+  border-color: rgba(196, 196, 196, 0.199);
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px; /* Adiciona 10px de espaço interno em todos os lados */
+}
+.portal1:hover {
+  background-color: #ffffff1e;
+}
+.portal2:hover {
+  background-color: #ffffff1e;
+}
+.portal3:hover {
+  background-color: #ffffff1e;
+}
+.portal2 {
+  background-color: #00000000;
+  font-size: 15px;
+  color: #0084ff91;
+  text-decoration: none;
+  border-color: rgba(196, 196, 196, 0.199);
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px; /* Adiciona 10px de espaço interno em todos os lados */
+}
+
+.portal3 {
+  background-color: #00000000;
+  font-size: 15px;
+  color: #0084ff91;
+  text-decoration: none;
+  border-color: rgba(196, 196, 196, 0.199);
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px; /* Adiciona 10px de espaço interno em todos os lados */
+}
+
+.config {
+  position: absolute;
+  background-color: transparent;
+  border-color: rgb(27, 35, 44);
+  border-radius: 8px;
+  top: 10%; /* Use porcentagem em vez de pixels para tornar responsivo */
+  left: 90%; /* Use porcentagem em vez de pixels para tornar responsivo */
+  transform: translate(-50%, -50%); /* Centralize o elemento */
+  border-width: 5px;
+  width: 31px;
+  border-style: solid;
+}
+
+/* Estilos para o menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-left: 20px;
+  margin-top: -2px;
+}
+.menu-toggle {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: none; /* O menu hamburguer é oculto por padrão */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  background-color: #000000;
+  position: fixed;
+  top: 20px;
+  left: -100%; /* Inicialmente, o menu está escondido à esquerda */
+  flex-direction: column;
+  width: 10%;
+  max-width: 300px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 0;
+  transition: 0.4s;
+}
+span {
+  color: #0084ff;
+  background-color: #0084ff48;
+  border-color: #f8f8f800;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+}
+span:hover {
+  background-color: #1f93ff48;
+}
+
+/* Estilos para o menu responsivo */
+@media screen and (max-width: 2068px) {
+  .menu-toggle {
+    display: block; /* O menu hamburguer é exibido apenas em telas menores */
+  }
+}
+
+/* Estilos para tornar o ícone responsivo em telas menores */
+@media screen and (max-width: 767px) {
+  h1 {
+    margin-top: -10px;
+    margin-left: -100px;
+    font-size: 50px;
+    margin-right: 280px;
+  
+  }
+  .portal {
+    margin-left: -180px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 20px;
+  }
+  .portal2 {
+    font-size: 20px;  
+  }
+  .portal3 {
+    font-size: 20px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: -60px;
+    margin-right: -400px;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -180px;
+    font-size: 81px;
+    margin-right: 110px;
+  
+  }
+  .portal {
+    margin-left: -180px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: -100px;
+    margin-right: -400px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -200px;
+    font-size: 100px;
+    margin-right: -80px;
+  
+  }
+  .portal {
+    margin-left: -150px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: -80px;
+    margin-right: -400px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1199px) and (max-width: 1366px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -150px;
+    font-size: 100px;
+    margin-right: -100px;
+  
+  }
+  .portal {
+    margin-left: -100px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: -40px;
+    margin-right: -400px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -70px;
+    font-size: 100px;
+    margin-right: -200px;
+  }
+  .portal {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: 70px;
+    margin-right: -400px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -60px;
+    font-size: 100px;
+    margin-right: -200px;
+  }
+  .portal {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: 70px;
+    margin-right: -400px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 2001px) and (max-width: 2500px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -60px;
+    font-size: 100px;
+    margin-right: -200px;
+  }
+  .portal {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: 70px;
+    margin-right: -400px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 2501px) and (max-width: 3000px) {
+  h1 {
+    margin-top: -100px;
+    margin-left: -20px;
+    font-size: 115px;
+    margin-right: -400px;
+  }
+  .portal {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: 70px;
+    margin-right: -400px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 3001px) {
+  h1 {
+    margin-top: -100px;
+    font-size: 115px;
+    margin-left: 80px;
+    margin-right: -600px;
+  }
+  .portal {
+    margin-left: 120px;
+    margin-top: -10px;
+    width: 100%;
+  }
+  .portal1 {
+    font-size: 30px;
+  }
+  .portal2 {
+    font-size: 30px;
+  }
+  .portal3 {
+    font-size: 30px;
+  }
+  .texto1 {
+    margin-top: -20px;
+    margin-left: 170px;
+    margin-right: -400px;
+    font-size: 20px;
+  }
+}

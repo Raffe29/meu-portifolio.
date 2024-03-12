@@ -1,0 +1,356 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(2%);
+
+  background: radial-gradient(circle, #16191e, #000000);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6%;
+  height: 10%;
+}
+.content {
+  height: 300%; /* Defina a altura desejada */
+  overflow-y: auto; /* Adiciona a barra de rolagem vertical apenas quando necessário */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a122e;
+}
+#foto1 {
+  margin-left: 200px;
+  margin-top: 50px;
+  border-radius: 15px; /* Bordas arredondadas */
+}
+.titulo {
+  color: aliceblue;
+  margin-left: 400px;
+  margin-top: 180px;
+}
+p {
+  color: #636363;
+  font-size: 0.9em;
+  line-height: 2.1;
+}
+.pr1 {
+  margin-top: 50px;
+  margin-left: 400px;
+  margin-right: 360px;
+}
+.pr2 {
+  margin-left: 400px;
+  margin-right: 360px;
+}
+.pr3 {
+  margin-left: 400px;
+  margin-right: 360px;
+}
+
+/* Estilos para tornar o ícone responsivo em telas menores */
+@media screen and (max-width: 767px) {
+  img {
+    width: 100%;
+  }
+  #foto1 {
+    margin-left: 20px;
+    margin-top: 110px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .pr3 {
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .pr4 {
+    margin-left: 100px;
+    margin-right: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  #foto1 {
+    margin-left: 100px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .pr3 {
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .pr4 {
+    margin-left: 100px;
+    margin-right: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #foto1 {
+    margin-left: 150px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 250px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 00px;
+  }
+  .pr2 {
+    margin-left: 250px;
+    margin-right: 200px;
+  }
+  .pr3 {
+    margin-left: 250px;
+    margin-right: 200px;
+  }
+  .pr4 {
+    margin-left: 250px;
+    margin-right: 200px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1199px) and (max-width: 1366px) {
+  #foto1 {
+    margin-left: 200px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 300px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  .pr2 {
+    margin-left: 300px;
+    margin-right: 250px;
+  }
+  .pr3 {
+    margin-left: 300px;
+    margin-right: 250px;
+  }
+  .pr4 {
+    margin-left: 300px;
+    margin-right: 250px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  #foto1 {
+    margin-left: 200px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 350px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  .pr3 {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  .pr4 {
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+  #foto1 {
+    margin-left: 200px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  p {
+    color: #636363;
+    font-size: 1em;
+    line-height: 2.1;
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 450px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 450px;
+    margin-right: 530px;
+  }
+  .pr3 {
+    margin-left: 450px;
+    margin-right: 530px;
+  }
+  .pr4 {
+    margin-left: 450px;
+    margin-right: 530px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 2001px) and (max-width: 2500px) {
+  #foto1 {
+    margin-left: 350px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  p {
+    color: #636363;
+    font-size: 1em;
+    line-height: 2.1;
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 600px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 600px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 600px;
+    margin-right: 650px;
+  }
+  .pr3 {
+    margin-left: 600px;
+    margin-right: 650px;
+  }
+  .pr4 {
+    margin-left: 600px;
+    margin-right: 650px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 2501px) and (max-width: 3000px) {
+  #foto1 {
+    margin-left: 350px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  p {
+    color: #636363;
+    font-size: 1.4em;
+    line-height: 2.1;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 750px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 750px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 750px;
+    margin-right: 900px;
+  }
+  .pr3 {
+    margin-left: 750px;
+    margin-right: 900px;
+  }
+  .pr4 {
+    margin-left: 750px;
+    margin-right: 900px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 3001px) {
+  #foto1 {
+    margin-left: 800px;
+    margin-top: 90px;
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  p {
+    color: #636363;
+    font-size: 3em;
+    line-height: 2.1;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  .titulo {
+    color: aliceblue;
+    margin-left: 1400px;
+    margin-top: 60px;
+  }
+  .pr1 {
+    margin-top: 50px;
+    margin-left: 1400px;
+    margin-right: 60px;
+  }
+  .pr2 {
+    margin-left: 1400px;
+    margin-right: 1600px;
+  }
+  .pr3 {
+    margin-left: 1400px;
+    margin-right: 1600px;
+  }
+  .pr4 {
+    margin-left: 1400px;
+    margin-right: 1600px;
+    padding-bottom: 60px;
+  }
+}
