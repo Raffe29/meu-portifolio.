@@ -172,3 +172,12 @@ span:hover {
         height: 30px;
     }
 }
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    h2 {
+        margin-left: 500px;
+    }
+    p {
+        margin-left: 500px;
+        margin-right: 600px;
+    }
+  }
